@@ -6,7 +6,7 @@
 <div v-for="kategori in state" :key="kategori.id"
     class="w-full max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
 
-    <img class=" p-8 rounded-t-lg" :src="getImgSrc(kategori.img)" alt="product image" />
+    <img class=" p-8 rounded-t-lg" :src="getImgSrc(kategori.img)" style="width: 532px; height: 333px;" alt="product image" />
 
     <div class="px-5 pb-5">
         <a href="#">
@@ -32,10 +32,10 @@
             <span class="bg-blue-100 text-blue-800 text-xs font-semibold mr-2 px-2.5 py-0.5 rounded dark:bg-blue-200 dark:text-blue-800 ml-3">5.0</span>
         </div>
         <div class="flex items-center justify-between">
-            <span class="text-3xl font-bold text-gray-900 dark:text-white">{{ kategori.harga }}</span>
+            <span class="text-4x1 font-normal text-gray-900 dark:text-white">{{ kategori.harga }}</span>
             <a href="#" class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
               <router-link :to="{ name: 'DetailKategori', params: { id_kategori: kategori.id } }">
-            <h4>{{ kategori.nama }}</h4>
+            <h4>{{ kategori.button_name }}</h4>
           </router-link>
 
             </a>

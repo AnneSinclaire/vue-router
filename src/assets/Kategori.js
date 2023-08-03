@@ -3,38 +3,43 @@ export const kategori = {
         {
 
             id: 1,
-            nama: "Baju",
-            harga: "300",
+            nama: "T-Shirt",
+            button_name: "Cek" ,
+            harga: "Kaos Polos Biasa",
             id_kategori : 1  ,
-            img: 'baju-patrick-2.jpg',
+            img: 'T-shirt.jpg',
 
         },
         {
             id: 2,
-            nama: "Celana",
-            harga: "8.000.000",
-            id_kategori : 2,
-            img: 'baju-patrick.jpg',
+            nama: "Hot-Toys",
+            harga: "Action Figure Anime",
+            img: 'kasumi-figure.png',
+            button_name: "Cek" ,
+            id_kategori : 2
         },
         {
             id: 3,
-            nama: "Topi",
-            harga: "8.000.000",
-            img: 'baju-patrick.jpg',
+            nama: "Gadget",
+            harga: "Gadget Bekas Gadget-in",
+            img: 'laptop2.jpg',
+            button_name: "Cek" ,
              id_kategori : 3
         },
         {
             id: 4,
-            nama: "Pakaian Dalam",
-            harga: "8.000.000",
-            img: 'baju-patrick.jpg',
+            nama: "Buku Novel",
+            harga: "Buku Novel Original",
+            img: 'kapal-novel.jpg',
+            button_name: "Cek" ,
              id_kategori : 4
         },
         {
             id: 5,
-            nama: "Pakaian Luar",
-            harga: "8.000.000",
-            img: 'baju-patrick.jpg',
+            nama: "Alat Musik",
+            harga: "Alat Musik Baru",
+            img: 'saxophon.png',
+            button_name: "Cek" ,
              id_kategori : 5
         },
 

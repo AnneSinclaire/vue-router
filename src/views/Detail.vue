@@ -23,20 +23,12 @@
                 <td>:</td>
                 <td>{{ detail.deskripsi }}</td>
             </tr>
-            <tr>
-                <td>Gambar</td>
-                <td>:</td>
-                <img class="p-8 rounded-t-lg" :src="getImgSrc(produk.img)" style="width: fit-content; height: fit-content;" alt="product image" /> 
-            </tr>
-            <tr>
-                <td>id_kategori</td>
-                <td>:</td>
-                <td>{{ detail.id }}</td>
-            </tr>
         </table>
 
 
     </center>
+
+
         
 
     </div>

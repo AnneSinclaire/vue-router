@@ -11,6 +11,9 @@ import ElektronikComponent from "../components/ElektronikComponent.vue";
 import PageNotFound from "../views/PageNotFound.vue"
 // import Elektronik from "../views/Elektronik.vue";
 
+import Login from "../views/Login.vue"
+import { users } from "../assets/User";
+
 
 // import Elektronik from "../views/Elektoinik.vue"
 
@@ -35,6 +38,14 @@ const routes = [
     path: "/produk",
     name: "Produk",
     component: Produk,
+    beforeEnter: (to, from, next) => {
+      const loggedInUser = true;
+      if (loggedInUser) {
+        next(); //Lanjutkan navigasi ke halaman produk jika sudah login
+      } else {
+        next("/login"); // Alihkan ke halaman login jika belum login
+      }
+    }
 
   },
   {
@@ -70,6 +81,12 @@ const routes = [
     path: '/:catchAll(.*)*',
     name: "PageNotFound",
     component: PageNotFound,
+  },
+  {
+    path: "/login",
+    name: "Login",
+    component: Login,
+    props: true
   },
   // {
   //   path: "/elektronik/:id_kategori",
